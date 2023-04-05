@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		5E618435888B9D49F8540165 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Qmake";
+			shellPath = "/bin/sh";
+			shellScript = "make -C '/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer' -f 'Vector Visualizer.xcodeproj/qt_makeqmake.mak'";
+			showEnvVarsInLog = "0";
+		};
+		FEADD8994C16FD150482170D = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Expr.cpp";
+			name = "Expr.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		F1C810C8DED1E808C25DA76F = {
+			fileRef = "FEADD8994C16FD150482170D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CA65C8E830134628F6302D58 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/main.cpp";
+			name = "main.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5707E0EF9B83E59F8A70E391 = {
+			fileRef = "CA65C8E830134628F6302D58";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E8874BF8AABFF1F71E35FE59 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/mainwidget.cpp";
+			name = "mainwidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FD4649FBDFCCC0CEE67D1A0D = {
+			fileRef = "E8874BF8AABFF1F71E35FE59";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		E7524618208940482E298D7D = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Utils/MathUtils.cpp";
+			name = "MathUtils.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0E34360FB8CB3DC46122EE02 = {
+			fileRef = "E7524618208940482E298D7D";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		641EE9CC855274D257FAC138 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/oglwidget.cpp";
+			name = "oglwidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A791A31178B7528119008058 = {
+			fileRef = "641EE9CC855274D257FAC138";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F3226AB90BE23D432B4B0B9B = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/Parser.cpp";
+			name = "Parser.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FD564C3361394008E7B0E2CF = {
+			fileRef = "F3226AB90BE23D432B4B0B9B";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		A1170F348EF52D3C1EB6D392 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/ParserAlt.cpp";
+			name = "ParserAlt.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3E3D50B108B941E7E8F5437D = {
+			fileRef = "A1170F348EF52D3C1EB6D392";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		C2E37252BB6AE9E3097E25A3 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/Lexer.cpp";
+			name = "Lexer.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3342D32670EFBD2606127A03 = {
+			fileRef = "C2E37252BB6AE9E3097E25A3";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		0B2ACEF4C4972D7976DA3D48 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Utils/StringUtils.cpp";
+			name = "StringUtils.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		63AE27D00CE8B22CCA680DE5 = {
+			fileRef = "0B2ACEF4C4972D7976DA3D48";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2DE16745D76E3C0D465E2116 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/VectorField.cpp";
+			name = "VectorField.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		93243F9A36BA2D09B27808DF = {
+			fileRef = "2DE16745D76E3C0D465E2116";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		68C314B727CB54AB67890248 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Graphics/Number.cpp";
+			name = "Number.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		FD95227F1A9B90FFB8C2EF57 = {
+			fileRef = "68C314B727CB54AB67890248";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		8F7BC5E1703DF122EBC522F7 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/bow.icns";
+			name = "bow.icns";
+			sourceTree = "<absolute>";
+		};
+		88BD14EFE43CC3E299D08ED3 = {
+			fileRef = "8F7BC5E1703DF122EBC522F7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		D294020BE3654231D7B698BE = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/moc_mainwidget.cpp";
+			name = "moc_mainwidget.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		012A897DF241D8AE1A69261C = {
+			fileRef = "D294020BE3654231D7B698BE";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		2C184A8EDE56B9AD031A6FC1 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Expr.h";
+			name = "Expr.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		502118AE62B0B01BBCDF3160 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/mainwidget.h";
+			name = "mainwidget.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		1FA1DA0AEB2FF41E99CA29DD = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Utils/MathUtils.h";
+			name = "MathUtils.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		97FB1D5E388E86FB0E9C64B9 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/oglwidget.h";
+			name = "oglwidget.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		5F6C889E9A3A42C101F27E81 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/Parser.h";
+			name = "Parser.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		35AEB373BF75EFFB33BBB2E2 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/ParserAlt.h";
+			name = "ParserAlt.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		189D4EBF756DA0034EC1AE55 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Parsing/Lexer.h";
+			name = "Lexer.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		D63F589DF38347DE586D7B9A = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Utils/StringUtils.h";
+			name = "StringUtils.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		E19786F41017E3CFDB92130F = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/VectorField.h";
+			name = "VectorField.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		ABED535DCF4B521748388173 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Graphics/Number.h";
+			name = "Number.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		482281B28010E64222B5D788 = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/mkspecs/features/data/dummy.cpp";
+			name = "dummy.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		77C32FFC14BB1752F56DBD90 = {
+			fileRef = "482281B28010E64222B5D788";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		394D4967128FA0B5F7393C9E = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/Vector Visualizer.pro";
+			name = "Vector Visualizer.pro";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		171E564337145E053E14554C = {
+			isa = PBXFileReference;
+			path = "/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer/.qmake.stash";
+			name = ".qmake.stash";
+			sourceTree = "<absolute>";
+		};
+		25B08E2869634E9BCBA333A2 = {
+			isa = PBXGroup;
+			children = (
+				"D294020BE3654231D7B698BE");
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		54B8433997AEBCE5949A9E85 = {
+			isa = PBXGroup;
+			children = (
+				"68C314B727CB54AB67890248",
+				"ABED535DCF4B521748388173");
+			name = "Graphics";
+			sourceTree = "<group>";
+		};
+		35E80EEFE7614C70CB99359B = {
+			isa = PBXGroup;
+			children = (
+				"F3226AB90BE23D432B4B0B9B",
+				"A1170F348EF52D3C1EB6D392",
+				"C2E37252BB6AE9E3097E25A3",
+				"5F6C889E9A3A42C101F27E81",
+				"35AEB373BF75EFFB33BBB2E2",
+				"189D4EBF756DA0034EC1AE55");
+			name = "Parsing";
+			sourceTree = "<group>";
+		};
+		DBF334E71BBDB2529E4B2054 = {
+			isa = PBXGroup;
+			children = (
+				"E7524618208940482E298D7D",
+				"0B2ACEF4C4972D7976DA3D48",
+				"1FA1DA0AEB2FF41E99CA29DD",
+				"D63F589DF38347DE586D7B9A");
+			name = "Utils";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 = {
+			isa = PBXGroup;
+			children = (
+				"FEADD8994C16FD150482170D",
+				"CA65C8E830134628F6302D58",
+				"E8874BF8AABFF1F71E35FE59",
+				"DBF334E71BBDB2529E4B2054",
+				"641EE9CC855274D257FAC138",
+				"35E80EEFE7614C70CB99359B",
+				"2DE16745D76E3C0D465E2116",
+				"54B8433997AEBCE5949A9E85",
+				"8F7BC5E1703DF122EBC522F7",
+				"2C184A8EDE56B9AD031A6FC1",
+				"502118AE62B0B01BBCDF3160",
+				"97FB1D5E388E86FB0E9C64B9",
+				"E19786F41017E3CFDB92130F");
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 = {
+			isa = PBXGroup;
+			children = (
+				"482281B28010E64222B5D788");
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 = {
+			isa = PBXGroup;
+			children = (
+				"394D4967128FA0B5F7393C9E",
+				"171E564337145E053E14554C");
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF0942E79C014DCEC8976BC = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Preprocessors";
+			shellPath = "/bin/sh";
+			shellScript = "make -C '/Users/KKjeer/Documents/Coding/Qt/Vector Visualizer' -f 'Vector Visualizer.xcodeproj/qt_preprocess.mak'";
+			showEnvVarsInLog = "0";
+		};
+		F7E50F631C51CD5B5DC0BC43 = {
+			buildActionMask = 2147483647;
+			files = (
+				"F1C810C8DED1E808C25DA76F",
+				"5707E0EF9B83E59F8A70E391",
+				"FD4649FBDFCCC0CEE67D1A0D",
+				"0E34360FB8CB3DC46122EE02",
+				"A791A31178B7528119008058",
+				"FD564C3361394008E7B0E2CF",
+				"3E3D50B108B941E7E8F5437D",
+				"3342D32670EFBD2606127A03",
+				"63AE27D00CE8B22CCA680DE5",
+				"93243F9A36BA2D09B27808DF",
+				"FD95227F1A9B90FFB8C2EF57",
+				"012A897DF241D8AE1A69261C",
+				"77C32FFC14BB1752F56DBD90");
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources";
+		};
+		0EBCA77864BCC1DDF58DCABF = {
+			isa = PBXFileReference;
+			name = "QtOpenGLWidgets.framework";
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/lib/QtOpenGLWidgets.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		274CCFFFEE1D6FB5245E6B58 = {
+			fileRef = "0EBCA77864BCC1DDF58DCABF";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		978772143D3161C6E209AE9D = {
+			isa = PBXFileReference;
+			name = "QtWidgets.framework";
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/lib/QtWidgets.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		4ED1EDA9855B66A59315AB8C = {
+			fileRef = "978772143D3161C6E209AE9D";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		34535E7C7CA7E902B9220B2F = {
+			isa = PBXFileReference;
+			name = "QtOpenGL.framework";
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/lib/QtOpenGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		D5CECE7473D8A9855737B2A8 = {
+			fileRef = "34535E7C7CA7E902B9220B2F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4E60D712DC47E5C350D52F72 = {
+			isa = PBXFileReference;
+			name = "QtGui.framework";
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/lib/QtGui.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		9630F9BB28CFB9C45A245781 = {
+			fileRef = "4E60D712DC47E5C350D52F72";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		723F90793B2C195E2CCB2233 = {
+			isa = PBXFileReference;
+			name = "AppKit.framework";
+			path = "/System/Library/Frameworks/AppKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		F2A75ACAC9DF6A3F4E5711E7 = {
+			fileRef = "723F90793B2C195E2CCB2233";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		3A8EF9C62A8D4790CBB89CEA = {
+			isa = PBXFileReference;
+			name = "ImageIO.framework";
+			path = "/System/Library/Frameworks/ImageIO.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		61EEC397DC8556BF8C4E36A7 = {
+			fileRef = "3A8EF9C62A8D4790CBB89CEA";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		1B2543FCC48E9436F21C4F63 = {
+			isa = PBXFileReference;
+			name = "Metal.framework";
+			path = "/System/Library/Frameworks/Metal.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		B3FE8FAC746D3D5BB24FA398 = {
+			fileRef = "1B2543FCC48E9436F21C4F63";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2DA195B6DAE184592848D26F = {
+			isa = PBXFileReference;
+			name = "QtCore.framework";
+			path = "/Users/KKjeer/Qt/6.0.2/clang_64/lib/QtCore.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		D9E4490E7DA71591248F21B3 = {
+			fileRef = "2DA195B6DAE184592848D26F";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B774D8E4178765CE52EAAF5 = {
+			isa = PBXFileReference;
+			name = "DiskArbitration.framework";
+			path = "/System/Library/Frameworks/DiskArbitration.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		A99B2AA0F9CBBDD12BA126A4 = {
+			fileRef = "2B774D8E4178765CE52EAAF5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A1A67BEAA744704B29168D39 = {
+			isa = PBXFileReference;
+			name = "IOKit.framework";
+			path = "/System/Library/Frameworks/IOKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8D267F2E4776F0ECA2F49DC8 = {
+			fileRef = "A1A67BEAA744704B29168D39";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D9815BDB5BD9F90D2BC05C5 = {
+			isa = PBXFileReference;
+			name = "AGL.framework";
+			path = "/System/Library/Frameworks/AGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		E45E51A644D5FC9F942ECE55 = {
+			fileRef = "8D9815BDB5BD9F90D2BC05C5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D4B32C2222F82AC56BADEB21 = {
+			isa = PBXFileReference;
+			name = "OpenGL.framework";
+			path = "/System/Library/Frameworks/OpenGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8771A8C96E9C391044035D99 = {
+			fileRef = "D4B32C2222F82AC56BADEB21";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AF39DD055C3EF8226FBE929D = {
+			children = (
+				"0EBCA77864BCC1DDF58DCABF",
+				"978772143D3161C6E209AE9D",
+				"34535E7C7CA7E902B9220B2F",
+				"4E60D712DC47E5C350D52F72",
+				"723F90793B2C195E2CCB2233",
+				"3A8EF9C62A8D4790CBB89CEA",
+				"1B2543FCC48E9436F21C4F63",
+				"2DA195B6DAE184592848D26F",
+				"2B774D8E4178765CE52EAAF5",
+				"A1A67BEAA744704B29168D39",
+				"8D9815BDB5BD9F90D2BC05C5",
+				"D4B32C2222F82AC56BADEB21");
+			isa = PBXGroup;
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D1C883685E82D5676953459A = {
+			buildActionMask = 2147483647;
+			files = (
+				"274CCFFFEE1D6FB5245E6B58",
+				"4ED1EDA9855B66A59315AB8C",
+				"D5CECE7473D8A9855737B2A8",
+				"9630F9BB28CFB9C45A245781",
+				"F2A75ACAC9DF6A3F4E5711E7",
+				"61EEC397DC8556BF8C4E36A7",
+				"B3FE8FAC746D3D5BB24FA398",
+				"D9E4490E7DA71591248F21B3",
+				"A99B2AA0F9CBBDD12BA126A4",
+				"8D267F2E4776F0ECA2F49DC8",
+				"E45E51A644D5FC9F942ECE55",
+				"8771A8C96E9C391044035D99");
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Link Binary With Libraries";
+		};
+		30414803F31797EB689AE508 = {
+			buildActionMask = 2147483647;
+			files = (
+				"C80DED8ECE779FCEC2E6A5DC");
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Copy Bundle Resources";
+		};
+		99542592E9780B9225F24AA8 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E188791E4686DB943EFC6E6C = {
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			explicitFileType = "wrapper.application";
+			path = "Vector Visualizer.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE0A091FDBFB3E9C31B7A1BD = {
+			children = (
+				"E188791E4686DB943EFC6E6C");
+			isa = PBXGroup;
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 = {
+			children = (
+				"2EB56BE3C2D93CDAB0C52E67",
+				"25B08E2869634E9BCBA333A2",
+				"B8254625CFD509ED2A24A166",
+				"74B182DB50CB5611B5C1C297",
+				"AF39DD055C3EF8226FBE929D",
+				"FE0A091FDBFB3E9C31B7A1BD");
+			isa = PBXGroup;
+			name = "Vector Visualizer";
+			sourceTree = "<group>";
+		};
+		468286EE158759488229A04B = {
+			buildPhases = (
+				"5E618435888B9D49F8540165",
+				"7EF0942E79C014DCEC8976BC");
+			dependencies = (
+				);
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXAggregateTarget;
+			buildRules = (
+);
+			productName = "Qt Preprocess";
+			name = "Qt Preprocess";
+		};
+		D3F284E9D9D9875FD7742104 = {
+			isa = PBXTargetDependency;
+			target = "468286EE158759488229A04B";
+		};
+		3338DB89FCF70B5AA07582B7 = {
+			buildPhases = (
+				"F7E50F631C51CD5B5DC0BC43",
+				"D1C883685E82D5676953459A",
+				"30414803F31797EB689AE508",
+				"99542592E9780B9225F24AA8");
+			dependencies = (
+				"D3F284E9D9D9875FD7742104");
+			productReference = "E188791E4686DB943EFC6E6C";
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXNativeTarget;
+			buildRules = (
+);
+			productType = "com.apple.product-type.application";
+			name = "Vector Visualizer";
+			productName = "Vector Visualizer";
+		};
+		3AA6C32AC930069E80220CF1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Vector Visualizer";
+				QMAKE_FULL_VERSION = "1.0.0";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = ".xcode";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.14";
+				HEADER_SEARCH_PATHS = (
+					".",
+					".",
+					"../../../../Qt/6.0.2/clang_64/lib/QtOpenGLWidgets.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtWidgets.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtOpenGL.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtGui.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGLWIDGETS_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++1z",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGLWIDGETS_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/../Frameworks",
+						"-Wl,-rpath,/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+						"-F/Users/KKjeer/Qt/6.0.2/clang_64/lib");
+				ARCHS = "x86_64";
+			};
+			name = "Debug";
+		};
+		77418F46922677BB04ED38DD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Vector Visualizer";
+				QMAKE_FULL_VERSION = "1.0.0";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "Vector Visualizer";
+			};
+			name = "Debug";
+		};
+		339EE1B2CC4FC24589A0EA95 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Vector Visualizer";
+				QMAKE_FULL_VERSION = "1.0.0";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = ".xcode";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.14";
+				HEADER_SEARCH_PATHS = (
+					".",
+					".",
+					"../../../../Qt/6.0.2/clang_64/lib/QtOpenGLWidgets.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtWidgets.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtOpenGL.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtGui.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/lib/QtCore.framework/Headers",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					"../../../../Qt/6.0.2/clang_64/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+					"/Users/KKjeer/Qt/6.0.2/clang_64/lib");
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGLWIDGETS_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++1z",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGLWIDGETS_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/../Frameworks",
+						"-Wl,-rpath,/Users/KKjeer/Qt/6.0.2/clang_64/lib",
+						"-F/Users/KKjeer/Qt/6.0.2/clang_64/lib");
+				ARCHS = "x86_64";
+			};
+			name = "Release";
+		};
+		6666AA5E688052234F6758D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64";
+				COPY_PHASE_STRIP = "NO";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Vector Visualizer";
+				QMAKE_FULL_VERSION = "1.0.0";
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = "1.0";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "Vector Visualizer";
+			};
+			name = "Release";
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"3AA6C32AC930069E80220CF1",
+				"339EE1B2CC4FC24589A0EA95");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6CC3B5D2136C7CD6A5CF5A59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"77418F46922677BB04ED38DD",
+				"6666AA5E688052234F6758D8");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6DB9C3763D02B1415CD9D565 = {
+			hasScannedForEncodings = 1;
+			compatibilityVersion = "Xcode 3.2";
+			isa = PBXProject;
+			mainGroup = "E8C543AB96796ECAA2E65C57";
+			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
+			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"3338DB89FCF70B5AA07582B7",
+				"468286EE158759488229A04B");
+			attributes = {
+				TargetAttributes = {
+				};
+			};
+		};
+	};
+	rootObject = "6DB9C3763D02B1415CD9D565";
+}

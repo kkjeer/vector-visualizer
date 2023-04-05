@@ -1,0 +1,141 @@
+// In increasing order of precedence, map each operator to its expression.
+  map<size_t, Expr *> operatorExprs;
+  Expr *Result = nullptr;
+  // size_t resultIndex = 0;
+  for (auto I = sortedIndices.begin(); I != sortedIndices.end(); ++I) {
+    size_t index = *I;
+    Lexeme L = lexemes.at(index);
+    string LStr = Lexer::LexemeString(L);
+    float precedence = operators[index];
+    Print("  Processing operator " + LStr + " at index " + to_string(index) + " with precedence " + Precision(precedence, 1));
+    // TODO: leftIndex should not just be index - 1, and rightIndex should not just be index + 1.
+    size_t leftIndex = index - 1;
+    if (leftIndex < start) {
+      Error("leftIndex " + to_string(leftIndex) + " is before start " + to_string(start));
+      return nullptr;
+    }
+    size_t rightIndex = index + 1;
+    if (rightIndex >= end) {
+      Error("rightIndex " + to_string(rightIndex) + " is after end " + to_string(end));
+      return nullptr;
+    }
+    Print("    leftIndex: " + to_string(leftIndex) + ", rightIndex: " + to_string(rightIndex));
+    Expr *left = GetExpr(leftIndex, leafExprs, operatorExprs);
+    if (!left) {
+      Error("left child of operator " + LStr + " is null");
+      return nullptr;
+    }
+    Print("&nbsp;&nbsp;&nbsp;&nbsp;left child: <span>" + left->ToString() + "</span>");
+    Expr *right = GetExpr(rightIndex, leafExprs, operatorExprs);
+    if (!left) {
+      Error("right child of operator " + LStr + " is null");
+      return nullptr;
+    }
+    Print("&nbsp;&nbsp;&nbsp;&nbsp;right child: <span>" + right->ToString() + "</span>");
+
+    switch(L.Kind) {
+      case Lex::Plus: {
+        operatorExprs[index] = new Add(left, right);
+        break;
+      }
+      case Lex::Minus: {
+        operatorExprs[index] = new Sub(left, right);
+        break;
+      }
+      case Lex::Times: {
+        operatorExprs[index] = new Mult(left, right);
+        break;
+      }
+      case Lex::Divide: {
+        operatorExprs[index] = new Div(left, right);
+        break;
+      }
+      case Lex::Power: {
+        operatorExprs[index] = new Pow(left, right);
+        break;
+      }
+      default: {
+        Error("unexpected operator " + LStr);
+        return nullptr;
+      }
+    }
+    // resultIndex++;
+    // if (resultIndex >= sortedIndices.size() - 1) {
+    //   Expr *FinalResult = operatorExprs[index];
+    //   Print("@@@ End of parsing from start = " + to_string(start) + " to end = " + to_string(end) + ": FinalResult is " + FinalResult->ToString());
+    //   return FinalResult;
+    // }
+    Result = operatorExprs[index];
+  }
+
+  if (!Result) {
+    Error("end of parsing from start = " + to_string(start) + " to end = " + to_string(end) + ": Result is null");
+    return nullptr;
+  }
+
+  Print("@@@ End of parsing from start = " + to_string(start) + " to end = " + to_string(end) + ": Result is " + Result->ToString());
+  return Result;
+
+
+
+Expr *GetExpr(size_t index, map<size_t, Expr *> leafExprs, map<size_t, Expr *> operatorExprs);
+
+Expr *ParserAlt::GetExpr(size_t index, map<size_t, Expr *> leafExprs, map<size_t, Expr *> operatorExprs) {
+  auto LeafIt = leafExprs.find(index);
+  if (LeafIt != leafExprs.end()) {
+    return LeafIt->second;
+  }
+  auto OpIt = operatorExprs.find(index);
+  if (OpIt != operatorExprs.end()) {
+    return OpIt->second;
+  }
+  return nullptr;
+}
+
+
+
+case Lex::SinFunc:
+      case Lex::CosFunc:
+      case Lex::Negative:
+      {
+        Print("Found trig or negation expr " + Lexer::LexemeString(L));
+        bool gotIndex = false;
+        size_t closeParenIndex = CloseParenIndex(exprIndex, end, L.Kind != Lex::Negative, gotIndex);
+        Print("got close paren index " + to_string(closeParenIndex) + ", gotIndex: " + (gotIndex ? "true" : "false"));
+        if (!gotIndex) {
+          if (L.Kind != Lex::Negative) return exprs;
+          // The following assumes that the child of a negation expression is
+          // a variable or a number and so is contained solely in the immediate
+          // lexeme following the negation lexeme.
+          // TODO: parse negation followed by trig function, e,g -sin(x)
+          Expr *child = ParseRange(exprIndex + 1, exprIndex + 2);
+          if (!child) {
+            Error("negation expr has a null child");
+            return exprs;
+          }
+          Print("Child of negation expr: " + child->ToString());
+          Expr *actualExpr = new Neg(child);
+          exprs[exprIndex] = actualExpr;
+          negationChildren[exprIndex] = exprIndex + 1;
+          closeParens[exprIndex] = exprIndex + 1;
+          ++exprIndex;
+          break;
+        }
+        ParseTrigOrNegation(exprIndex, end, exprs, closeParens)
+        // Lexeme closeParenLex = lexemes.at(closeParenIndex);
+        // Debug("Got close paren index: " + to_string(closeParenIndex) + " which is lexeme " + Lexer::LexemeString(closeParenLex));
+        // closeParens[exprIndex] = closeParenIndex;
+        // Expr *child = ParseRange(exprIndex + 1, closeParenIndex + 1);
+        // if (!child) {
+        //   Error("trig or negation expr at index " + to_string(exprIndex) + " has a null child");
+        //   return exprs;
+        // }
+        // Print("Child of trig or negation expr: " + child->ToString());
+        // Expr *actualExpr = nullptr;
+        // if (L.Kind == Lex::SinFunc) actualExpr = new Sin(child);
+        // else if (L.Kind == Lex::CosFunc) actualExpr = new Cos(child);
+        // else if (L.Kind == Lex::Negative) actualExpr = new Neg(child);
+        // exprs[exprIndex] = actualExpr;
+        // exprIndex = closeParenIndex + 1;
+        break;
+      }

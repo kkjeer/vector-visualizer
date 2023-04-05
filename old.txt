@@ -1,0 +1,56 @@
+/*** mainwidget.cpp - GetVectorControls ***/
+// Playing with test scroll area
+  // QWidget *scrollContainment = new QWidget;
+  // scrollContainment->setLayout(new QVBoxLayout);
+  // QWidget *itemsContainer = new QWidget;
+  // itemsContainer->setLayout(new QVBoxLayout);
+  // for (int i = 1; i <= 20; ++i) {
+  //   itemsContainer->layout()->addWidget(new QLabel(Fancy("Item " + to_string(i))));
+  // }
+  // QScrollArea *myScroll = new QScrollArea();
+  // myScroll->setWidget(itemsContainer);
+  // myScroll->setWidgetResizable(true);
+  // scrollContainment->layout()->addWidget(myScroll);
+  // vectorLayout->addWidget(scrollContainment);
+
+  // Playing with a dummy scroll area (from stack overflow)
+  // QSplitter *mainArea = new QSplitter(Qt::Vertical);
+  // QWidget *containment = new QWidget;
+  // containment->setLayout(new QVBoxLayout);
+  // QWidget *currentStructures = new QWidget;
+  // currentStructures->setLayout(new QVBoxLayout);
+  // currentStructures->layout()->setAlignment(Qt::AlignTop);
+  // for (int i = 1; i <= 20; ++i) {
+  //   currentStructures->layout()->addWidget(new QLabel(Fancy("Testing " + to_string(i))));
+  // }
+  // QScrollArea *scroll = new QScrollArea();
+  // scroll->setWidget(currentStructures);
+  // scroll->setWidgetResizable(true);
+  // containment->layout()->addWidget(scroll);
+  // mainArea->addWidget(containment);
+  // // mainArea->addWidget(new QWidget); // Add a widget for blank space at the bottom to test resizing the splitter
+  // vectorLayout->addWidget(mainArea);
+
+  // Playing with a dummy scroll area
+  // QWidget *central = new QWidget;
+  // QScrollArea *scroll = new QScrollArea;
+  // QVBoxLayout *layout = new QVBoxLayout;
+  // layout->addWidget(new QLabel("Test scroll 1"));
+  // layout->addWidget(new QLabel("Test scroll 2"));
+  // layout->addWidget(new QLabel("Test scroll 3"));
+  // central->setLayout(layout);
+  // scroll->setWidget(central);
+  // scroll->setWidgetResizable(true);
+  // vectorLayout->addLayout(layout);
+  // vectorLayout->addWidget(central);
+
+
+// Old version of squishing z-coordinates on the edges of the coordinate system
+    // to make them more visible, but this is less accurate to what the user entered
+    // float startZ = coordSystemZ - 0.3 * (xStart * xStart + yStart * yStart);
+    // Vec2 startToZ = {-startZ, startZ};
+    // Debug("mapping to start z range { " + Precision(startToZ.x) + ", " + Precision(startToZ.y) + " }");
+
+// float endZ = coordSystemZ - 0.3 * (v.end.x * v.end.x + v.end.y * v.end.y);
+    // Vec2 endToZ = {-endZ, endZ};
+    // Debug("mapping to end z range { " + Precision(endToZ.x) + ", " + Precision(endToZ.y) + " }");
