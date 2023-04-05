@@ -7,7 +7,7 @@ Users can add one or more vectors to graph.
 
 ![](https://user-images.githubusercontent.com/6687333/229967463-e0bca81e-334c-4f6c-911e-347f9783dcd5.png)
 
-The application calculates the vector length and direction and show each normalized vector.
+The application calculates the vector length and direction and can show each normalized vector.
 
 ![](https://user-images.githubusercontent.com/6687333/229967473-bb5e5098-9503-4f25-a5a2-abb2c41b5ca6.png)
 
